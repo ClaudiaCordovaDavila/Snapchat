@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ImagenViewController: UIViewController, UIImagePickerControllerDelegate,  UINavigationControllerDelegate {
 
@@ -36,6 +37,19 @@ class ImagenViewController: UIViewController, UIImagePickerControllerDelegate,  
     }
     
     @IBAction func elegirContactoTapped(_ sender: Any) {
+        performSegue(withIdentifier: "seleccionarContactoSegue", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        let imagenesFolder = Storage.storage().reference().child("imagenes")
+        let imagenData = UIImagePNGRepresentation(imageView.image!)!
+        
+        imagenesFolder.child("imagenes.png").putData(imagenData, metadata: nil, completion: {(metadata, error) in
+            print("Intentando subir la imagen")
+            if error != nil{
+                print("Ocurrió un error:\(error)")
+            }
+        })
     }
     
 }

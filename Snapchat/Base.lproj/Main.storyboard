@@ -158,11 +158,27 @@
                         <outlet property="descripcionTextField" destination="Vzc-s0-BuT" id="C87-U0-joD"/>
                         <outlet property="elegirContactoBoton" destination="Jsn-mc-0TY" id="vd4-IC-heu"/>
                         <outlet property="imageView" destination="BQq-Ob-OaW" id="mQ6-bU-hh0"/>
+                        <segue destination="Llw-b9-tZg" kind="show" identifier="seleccionarContactoSegue" id="KKB-rQ-RaV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h65-TZ-GOg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-778" y="-17"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Xd9-tR-Wy7">
+            <objects>
+                <viewController id="Llw-b9-tZg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rrs-67-sYE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="tfg-Vk-d6R"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lwW-rd-GCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-41" y="-18"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ycg-oW-EyX">
