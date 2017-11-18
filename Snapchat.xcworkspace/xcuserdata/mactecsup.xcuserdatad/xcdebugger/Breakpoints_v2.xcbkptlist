@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Snapchat/iniciarSesionViewController.swift"
-            timestampString = "532723356.469186"
+            timestampString = "532724849.131729"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "iniciarSesionTapped(_:)"
             landmarkType = "7">
          </BreakpointContent>
