@@ -165,16 +165,31 @@
             </objects>
             <point key="canvasLocation" x="-778" y="-17"/>
         </scene>
-        <!--View Controller-->
+        <!--Elegir Usuario View Controller-->
         <scene sceneID="Xd9-tR-Wy7">
             <objects>
-                <viewController id="Llw-b9-tZg" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Llw-b9-tZg" customClass="ElegirUsuarioViewController" customModule="Snapchat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rrs-67-sYE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ArL-li-kt4">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tfg-Vk-d6R" firstAttribute="bottom" secondItem="ArL-li-kt4" secondAttribute="bottom" id="Dhr-oM-9Vg"/>
+                            <constraint firstItem="ArL-li-kt4" firstAttribute="leading" secondItem="tfg-Vk-d6R" secondAttribute="leading" id="UhI-9m-9QG"/>
+                            <constraint firstItem="ArL-li-kt4" firstAttribute="top" secondItem="tfg-Vk-d6R" secondAttribute="top" id="e3r-Wn-g0j"/>
+                            <constraint firstItem="tfg-Vk-d6R" firstAttribute="trailing" secondItem="ArL-li-kt4" secondAttribute="trailing" id="rXq-ml-zJd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="tfg-Vk-d6R"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="ArL-li-kt4" id="3xV-Jz-muF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lwW-rd-GCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
