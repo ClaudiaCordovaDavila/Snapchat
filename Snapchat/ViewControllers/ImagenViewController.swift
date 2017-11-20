@@ -46,13 +46,15 @@ class ImagenViewController: UIViewController, UIImagePickerControllerDelegate,  
             if error != nil{
                 print("Ocurrió un error:\(error)")
             }else{
-                self.performSegue(withIdentifier: "seleccionarContactoSegue", sender: nil)
+                self.performSegue(withIdentifier: "seleccionarContactoSegue", sender: metadata?.downloadURL()!.absoluteString)
             }
         })
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        
+        let siguienteVC = segue.destination as! ElegirUsuarioViewController
+        siguienteVC.imagenURL = sender as! String
+        siguienteVC.descrip = descripcionTextField.text!
     }
     
 }
