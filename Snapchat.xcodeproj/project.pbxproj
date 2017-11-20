@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E230B0B31FC38951009065B8 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = E230B0B21FC38951009065B8 /* Usuario.swift */; };
 		E2D41F911FBDF37B00A6AE55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D41F901FBDF37B00A6AE55 /* AppDelegate.swift */; };
 		E2D41F931FBDF37B00A6AE55 /* iniciarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D41F921FBDF37B00A6AE55 /* iniciarSesionViewController.swift */; };
 		E2D41F961FBDF37B00A6AE55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D41F941FBDF37B00A6AE55 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		30B0B0B724F0A1E8E6ABEDBC /* Pods_Snapchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snapchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A7178682AB7FE8301BAD16 /* Pods-Snapchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapchat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Snapchat/Pods-Snapchat.debug.xcconfig"; sourceTree = "<group>"; };
+		E230B0B21FC38951009065B8 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		E2D41F8D1FBDF37B00A6AE55 /* Snapchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snapchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D41F901FBDF37B00A6AE55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2D41F921FBDF37B00A6AE55 /* iniciarSesionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iniciarSesionViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,25 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E230B0B01FC36A21009065B8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E2D41F921FBDF37B00A6AE55 /* iniciarSesionViewController.swift */,
+				E2F392841FC0E45B00B826B5 /* SnapsViewController.swift */,
+				E2F392861FC0EBC200B826B5 /* ImagenViewController.swift */,
+				E2F392881FC1006500B826B5 /* ElegirUsuarioViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E230B0B11FC3891D009065B8 /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				E230B0B21FC38951009065B8 /* Usuario.swift */,
+			);
+			path = Modelos;
+			sourceTree = "<group>";
+		};
 		E2D41F841FBDF37B00A6AE55 = {
 			isa = PBXGroup;
 			children = (
@@ -87,17 +108,15 @@
 		E2D41F8F1FBDF37B00A6AE55 /* Snapchat */ = {
 			isa = PBXGroup;
 			children = (
+				E230B0B11FC3891D009065B8 /* Modelos */,
+				E230B0B01FC36A21009065B8 /* ViewControllers */,
 				E2F3925E1FC0BB2900B826B5 /* Snapchat.entitlements */,
 				E2D41F901FBDF37B00A6AE55 /* AppDelegate.swift */,
-				E2D41F921FBDF37B00A6AE55 /* iniciarSesionViewController.swift */,
 				E2D41F941FBDF37B00A6AE55 /* Main.storyboard */,
 				E2D41F971FBDF37B00A6AE55 /* Assets.xcassets */,
 				E2D41F991FBDF37B00A6AE55 /* LaunchScreen.storyboard */,
 				E2D41F9C1FBDF37B00A6AE55 /* Info.plist */,
 				E2D41FA21FBDF88F00A6AE55 /* GoogleService-Info.plist */,
-				E2F392841FC0E45B00B826B5 /* SnapsViewController.swift */,
-				E2F392861FC0EBC200B826B5 /* ImagenViewController.swift */,
-				E2F392881FC1006500B826B5 /* ElegirUsuarioViewController.swift */,
 			);
 			path = Snapchat;
 			sourceTree = "<group>";
@@ -246,6 +265,7 @@
 				E2D41F931FBDF37B00A6AE55 /* iniciarSesionViewController.swift in Sources */,
 				E2F392871FC0EBC200B826B5 /* ImagenViewController.swift in Sources */,
 				E2D41F911FBDF37B00A6AE55 /* AppDelegate.swift in Sources */,
+				E230B0B31FC38951009065B8 /* Usuario.swift in Sources */,
 				E2F392851FC0E45B00B826B5 /* SnapsViewController.swift in Sources */,
 				E2F392891FC1006500B826B5 /* ElegirUsuarioViewController.swift in Sources */,
 			);

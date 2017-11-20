@@ -7,22 +7,36 @@
 //
 
 import UIKit
+import Firebase
 
 class ElegirUsuarioViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    var usuarios : [Usuario] = []
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        Database.database().reference().child("usuarios").observe(DataEventType.childAdded, with: {(snapshot) in
+            
+            let usuario = Usuario()
+            usuario.email = (snapshot.value as! NSDictionary)["email"] as! String
+            usuario.uid = snapshot.key
+            self.usuarios.append(usuario)
+            self.tableView.reloadData()
+        })
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0 //retornamos 0 para hacer pruebas de momento y no tener errores
+        return  usuarios.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell() //retornamos una celda cualquiera para hacer pruebas de momento
+        let  cell = UITableViewCell()
+        let usuario = usuarios[indexPath.row]
+        cell.textLabel?.text = usuario.email
+        return cell
     }
 }
