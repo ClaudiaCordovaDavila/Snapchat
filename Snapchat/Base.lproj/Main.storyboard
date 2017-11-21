@@ -76,11 +76,23 @@
         <!--Snaps View Controller-->
         <scene sceneID="Os1-Zd-JHY">
             <objects>
-                <viewController id="92n-jB-D8E" customClass="SnapsViewController" customModule="Snapchat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="92n-jB-D8E" customClass="SnapsViewController" customModule="Snapchat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BLv-XS-6ft">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CmG-Gv-vZX">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bJD-JP-gbk" firstAttribute="trailing" secondItem="CmG-Gv-vZX" secondAttribute="trailing" id="05K-t1-S4F"/>
+                            <constraint firstItem="CmG-Gv-vZX" firstAttribute="top" secondItem="bJD-JP-gbk" secondAttribute="top" id="5g9-Uj-ImG"/>
+                            <constraint firstItem="bJD-JP-gbk" firstAttribute="bottom" secondItem="CmG-Gv-vZX" secondAttribute="bottom" id="7Tk-8a-1md"/>
+                            <constraint firstItem="CmG-Gv-vZX" firstAttribute="leading" secondItem="bJD-JP-gbk" secondAttribute="leading" id="NQz-WV-fnC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bJD-JP-gbk"/>
                     </view>
                     <navigationItem key="navigationItem" id="V74-Dv-eKx">
@@ -95,10 +107,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="CmG-Gv-vZX" id="mb2-WX-evH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wPc-dC-Vd2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1545" y="-16"/>
+            <point key="canvasLocation" x="-1999" y="-16"/>
         </scene>
         <!--Imagen View Controller-->
         <scene sceneID="uxh-aT-zjd">
@@ -163,7 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h65-TZ-GOg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-778" y="-17"/>
+            <point key="canvasLocation" x="-1510" y="-16"/>
         </scene>
         <!--Elegir Usuario View Controller-->
         <scene sceneID="Xd9-tR-Wy7">
@@ -193,7 +208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lwW-rd-GCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-41" y="-18"/>
+            <point key="canvasLocation" x="-1019" y="-17"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ycg-oW-EyX">
@@ -211,7 +226,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tbb-ez-cvB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2327" y="-15"/>
+            <point key="canvasLocation" x="-2536" y="-16"/>
         </scene>
     </scenes>
 </document>
