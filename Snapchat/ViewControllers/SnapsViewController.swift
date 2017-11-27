@@ -46,4 +46,16 @@ class SnapsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let snap = snaps[indexPath.row]
+        performSegue(withIdentifier: "versnapsegue", sender: snap)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "versnapsegue"{
+            let siguienteVC = segue.destination as! VerSnapViewController
+            siguienteVC.snap = sender as! Snap
+        }
+    }
+    
 }

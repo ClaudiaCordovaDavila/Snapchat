@@ -71,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3090" y="-15"/>
+            <point key="canvasLocation" x="-3860" y="-1"/>
         </scene>
         <!--Snaps View Controller-->
         <scene sceneID="Os1-Zd-JHY">
@@ -109,11 +109,52 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="CmG-Gv-vZX" id="mb2-WX-evH"/>
+                        <segue destination="u3v-Jh-LKz" kind="show" identifier="versnapsegue" id="ySw-PZ-bG4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wPc-dC-Vd2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1999" y="-16"/>
+            <point key="canvasLocation" x="-2279" y="-1"/>
+        </scene>
+        <!--Ver Snap View Controller-->
+        <scene sceneID="b9V-my-cPb">
+            <objects>
+                <viewController id="u3v-Jh-LKz" customClass="VerSnapViewController" customModule="Snapchat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hjo-Xi-yea">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5O-wP-uXA">
+                                <rect key="frame" x="5" y="636" width="365" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pVM-P4-G7X">
+                                <rect key="frame" x="10" y="74" width="355" height="552"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Oqi-Ld-RK8" firstAttribute="trailing" secondItem="P5O-wP-uXA" secondAttribute="trailing" constant="5" id="HUj-J8-IHm"/>
+                            <constraint firstItem="P5O-wP-uXA" firstAttribute="leading" secondItem="Oqi-Ld-RK8" secondAttribute="leading" constant="5" id="K0C-PW-WcP"/>
+                            <constraint firstItem="Oqi-Ld-RK8" firstAttribute="trailing" secondItem="pVM-P4-G7X" secondAttribute="trailing" constant="10" id="THQ-FS-J0B"/>
+                            <constraint firstItem="pVM-P4-G7X" firstAttribute="top" secondItem="Oqi-Ld-RK8" secondAttribute="top" constant="10" id="gIt-GJ-lK1"/>
+                            <constraint firstItem="pVM-P4-G7X" firstAttribute="leading" secondItem="Oqi-Ld-RK8" secondAttribute="leading" constant="10" id="gXY-1O-xs5"/>
+                            <constraint firstItem="P5O-wP-uXA" firstAttribute="top" secondItem="pVM-P4-G7X" secondAttribute="bottom" constant="10" id="hvC-jd-Dp0"/>
+                            <constraint firstItem="P5O-wP-uXA" firstAttribute="centerX" secondItem="hjo-Xi-yea" secondAttribute="centerX" id="mvv-Dg-ojI"/>
+                            <constraint firstItem="Oqi-Ld-RK8" firstAttribute="bottom" secondItem="P5O-wP-uXA" secondAttribute="bottom" constant="10" id="vrd-2L-eHB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Oqi-Ld-RK8"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="pVM-P4-G7X" id="y0M-2Y-Cr5"/>
+                        <outlet property="label" destination="P5O-wP-uXA" id="rMq-TZ-Xwi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Ur-8I-yoK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2279" y="724"/>
         </scene>
         <!--Imagen View Controller-->
         <scene sceneID="uxh-aT-zjd">
@@ -178,7 +219,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h65-TZ-GOg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1510" y="-16"/>
+            <point key="canvasLocation" x="-1458" y="-1"/>
         </scene>
         <!--Elegir Usuario View Controller-->
         <scene sceneID="Xd9-tR-Wy7">
@@ -208,7 +249,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lwW-rd-GCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1019" y="-17"/>
+            <point key="canvasLocation" x="-628" y="-1"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ycg-oW-EyX">
@@ -226,7 +267,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tbb-ez-cvB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2536" y="-16"/>
+            <point key="canvasLocation" x="-3086" y="-1"/>
         </scene>
     </scenes>
 </document>

@@ -18,6 +18,7 @@
 		E2F392851FC0E45B00B826B5 /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F392841FC0E45B00B826B5 /* SnapsViewController.swift */; };
 		E2F392871FC0EBC200B826B5 /* ImagenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F392861FC0EBC200B826B5 /* ImagenViewController.swift */; };
 		E2F392891FC1006500B826B5 /* ElegirUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F392881FC1006500B826B5 /* ElegirUsuarioViewController.swift */; };
+		E2F6D3051FCCA73700EE95B3 /* VerSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F6D3041FCCA73700EE95B3 /* VerSnapViewController.swift */; };
 		E388AB16145D2803FC1DE24A /* Pods_Snapchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B0B0B724F0A1E8E6ABEDBC /* Pods_Snapchat.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		E2F392841FC0E45B00B826B5 /* SnapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
 		E2F392861FC0EBC200B826B5 /* ImagenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagenViewController.swift; sourceTree = "<group>"; };
 		E2F392881FC1006500B826B5 /* ElegirUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElegirUsuarioViewController.swift; sourceTree = "<group>"; };
+		E2F6D3041FCCA73700EE95B3 /* VerSnapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerSnapViewController.swift; sourceTree = "<group>"; };
 		FE4498B114D0FD132E6643F4 /* Pods-Snapchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapchat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Snapchat/Pods-Snapchat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +75,7 @@
 		E230B0B01FC36A21009065B8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E2F6D3041FCCA73700EE95B3 /* VerSnapViewController.swift */,
 				E2D41F921FBDF37B00A6AE55 /* iniciarSesionViewController.swift */,
 				E2F392841FC0E45B00B826B5 /* SnapsViewController.swift */,
 				E2F392861FC0EBC200B826B5 /* ImagenViewController.swift */,
@@ -269,6 +272,7 @@
 				E2F392871FC0EBC200B826B5 /* ImagenViewController.swift in Sources */,
 				E2D41F911FBDF37B00A6AE55 /* AppDelegate.swift in Sources */,
 				E230B0B31FC38951009065B8 /* Usuario.swift in Sources */,
+				E2F6D3051FCCA73700EE95B3 /* VerSnapViewController.swift in Sources */,
 				E230B0B51FC39A32009065B8 /* Snap.swift in Sources */,
 				E2F392851FC0E45B00B826B5 /* SnapsViewController.swift in Sources */,
 				E2F392891FC1006500B826B5 /* ElegirUsuarioViewController.swift in Sources */,
