@@ -16,6 +16,7 @@ class ImagenViewController: UIViewController, UIImagePickerControllerDelegate,  
     @IBOutlet weak var elegirContactoBoton: UIButton!
     
     var  imagePicker = UIImagePickerController()
+    var imagenID = NSUUID().uuidString
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +42,7 @@ class ImagenViewController: UIViewController, UIImagePickerControllerDelegate,  
         let imagenesFolder = Storage.storage().reference().child("imagenes")
         let imagenData = UIImagePNGRepresentation(imageView.image!)!
         
-        imagenesFolder.child("\(NSUUID().uuidString).jpg").putData(imagenData, metadata: nil, completion: {(metadata, error) in
+        imagenesFolder.child("\(imagenID).jpg").putData(imagenData, metadata: nil, completion: {(metadata, error) in
             print("Intentando subir la imagen")
             if error != nil{
                 print("Ocurrió un error:\(error)")
@@ -55,6 +56,7 @@ class ImagenViewController: UIViewController, UIImagePickerControllerDelegate,  
         let siguienteVC = segue.destination as! ElegirUsuarioViewController
         siguienteVC.imagenURL = sender as! String
         siguienteVC.descrip = descripcionTextField.text!
+        siguienteVC.imagenID = imagenID
     }
     
 }
