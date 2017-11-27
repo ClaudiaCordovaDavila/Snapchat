@@ -30,6 +30,17 @@ class SnapsViewController: UIViewController, UITableViewDelegate, UITableViewDat
             self.snaps.append(snap)
             self.tableView.reloadData()
         })
+        
+        Database.database().reference().child("usuarios").child(Auth.auth().currentUser!.uid).child("snaps").observe(DataEventType.childRemoved, with: {(snapshot) in
+            var iterador = 0
+            for snap in self.snaps{
+                if snap.id == snapshot.key{
+                    self.snaps.remove(at: iterador)
+                }
+                iterador += 1
+            }
+            self.tableView.reloadData()
+        })
     }
 
     @IBAction func cerrarSesionTapped(_ sender: Any) {
