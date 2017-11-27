@@ -12,4 +12,5 @@ class Snap{
     var descrip = ""
     var from = ""
     var id = ""
+    var imagenID = ""
 }
